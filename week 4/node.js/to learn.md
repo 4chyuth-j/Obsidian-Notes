@@ -1,0 +1,14 @@
+- spawn and fork
+- process thread
+- thread pool 
+- microtask queue
+- libuv- timer queue, i/o queue, check queue, close queue
+- phases of event loop(REPL)
+- encription and hashing
+- decript
+- buffer class
+- CORS
+- Environmental Variables
+- API
+- session package & initialisation
+- max size of a cookie
