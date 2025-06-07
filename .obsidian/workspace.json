@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "research.md",
+                "file": "week 13/DSA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "research"
+              "title": "DSA"
             }
           }
         ],
@@ -194,8 +194,16 @@
   },
   "active": "87a295b893971be3",
   "lastOpenFiles": [
-    "week 13.md",
+    "week 13/Untitled.md",
+    "week 13/DSA.md",
+    "week 13/Time and Space Complexity.md",
+    "week 13/Pasted image 20250603095712.png",
+    "week 6/basic js.md",
+    "week 5/Mongodb.md",
     "research.md",
+    "week 13",
+    "week 6/Advanced js.md",
+    "week 13.md",
     "week 12/web hosting.md",
     "week 12/Pasted image 20250520230325.png",
     "week 12/Pasted image 20250520230219.png",
@@ -213,12 +221,9 @@
     "online session (communication)/portmanteau words.md",
     "online session (communication)/grammer.md",
     "New word.md",
-    "week 5/Mongodb.md",
-    "week 6/basic js.md",
     "online session (communication)/phrase/Untitled.md",
     "online session (communication)/phrase",
     "online session (communication)",
-    "week 6/Advanced js.md",
     "week 4/Express.js/Express js.md",
     "week 5/Advanced mongodb.md",
     "week 4/Express.js/express.json().md",
@@ -228,11 +233,7 @@
     "week 6/User Management page.md",
     "week 4/node.js/notes/Pasted image 20250208172120.png",
     "week 4/node.js/notes/Pasted image 20250208170125.png",
-    "week 6/To do list.md",
-    "week 4/node.js/to learn.md",
     "week 4/node.js/notes/Pasted image 20250207132047.png",
-    "week 4/node.js/notes/visual representation of node js.md",
-    "week 4/node.js/notes/Pasted image 20250207131901.png",
     "Untitled.canvas",
     "week 6",
     "week 5",
