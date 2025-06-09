@@ -1223,6 +1223,43 @@ Don’t think of recursion as “just another way to loop” —
 Think of it as your **secret weapon** for solving the _hardest_, _ugliest_, and _most beautiful_ problems in computer science 😎
 
 
+# 💡Tips for solving recursion Problems.
+
+- Try to draw recursion tree before coding and try to understand and simplify the problem
+- If the function returns something- its recursion call should also contain `return` keyword before the function call statement. 
+
+ eg 1: In this example it returns the nth fibanocci number, so it need return keyword before the recursion call.
+
+```js
+   function fibo(n){
+
+    if(n<2 && n>=0) return n;
+
+    return fibo(n-1)+ fibo(n-2);
+
+   }
+
+let n=50;
+
+console.log(`${n} th fibanocci number is ${fibo(n)}`);
+```
+
+eg2: In this example it only prints the 1 to n numbers doesn't return anything . So it does not `return` keyword before recursion call.
+
+```js
+function elemPrint(n){
+
+    if(n<=0) return ;
+
+    elemPrint(n-1);
+
+    console.log(n);
+
+}
+
+elemPrint(10);
+```
+
 # What is recursion tree?
 
 A **recursion tree** is a **visual representation** of how a recursive algorithm breaks down a problem into smaller subproblems. It helps you **understand the flow of recursive calls**, how they branch out, and how much **work is done at each level**. It's commonly used in **algorithm analysis**, especially for **time complexity** in divide-and-conquer problems (like merge sort, binary search, etc.).
