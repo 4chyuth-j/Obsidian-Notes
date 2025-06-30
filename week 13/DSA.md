@@ -813,6 +813,83 @@ console.log(binarySearch(arr, target));  // Output: 4
 
 
 
+# Problems on binary search
+- Rotated binary search
+- binary search using recursion
+
+
+
+### 🔰 Beginner Level:
+
+1. **Standard Binary Search**
+    
+    - Find an element in a sorted array.
+        
+    - 🔗 Leetcode: [704. Binary Search](https://leetcode.com/problems/binary-search/)
+        
+2. **First and Last Position of Element**
+    
+    - Find the first and last occurrence of a target.
+        
+    - 🔗 Leetcode: [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+        
+3. **Insert Position**
+    
+    - Find index to insert target in sorted array.
+        
+    - 🔗 Leetcode: [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+        
+
+---
+
+### 🧠 Intermediate Level:
+
+4. **Peak Element**
+    
+    - Find an element greater than its neighbors.
+        
+    - 🔗 Leetcode: [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)
+        
+5. **Search in Rotated Sorted Array**
+    
+    - Array is sorted but rotated at unknown pivot.
+        
+    - 🔗 Leetcode: [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+        
+6. **Minimum in Rotated Sorted Array**
+    
+    - 🔗 Leetcode: [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+        
+
+---
+
+### 🔥 Advanced / Brain Twisters:
+
+7. **Find a Single Element in a Sorted Array**
+    
+    - Every element appears twice except one.
+        
+    - 🔗 Leetcode: [540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)
+        
+8. **Koko Eating Bananas**
+    
+    - Binary search the speed.
+        
+    - 🔗 Leetcode: [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
+        
+9. **Median of Two Sorted Arrays**
+    
+    - Divide and conquer with binary search logic.
+        
+    - 🔗 Leetcode: [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+        
+10. **Aggressive Cows** (Classic in coding contests)
+    
+
+- Place cows in stalls such that minimum distance between any two is maximized.
+    
+
+---
 
 
 
@@ -2066,3 +2143,138 @@ Let me know if you want:
 - Practice problems using memoization
     
 - Or memoization in other languages (like Python or C++) 🔥
+
+
+#  Beginner Level Recursion Problems
+
+1. **Factorial of a Number**
+    
+    - Classic intro. Just basic recursion.
+        
+    - Input: `5` → Output: `120`
+        
+2. **Fibonacci Number**
+    
+    - Returns nth Fibonacci number using recursion.
+        
+    - Try memoization too later.
+        
+    - 🔗 Leetcode: [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
+        
+3. **Print Numbers from N to 1 & 1 to N**
+    
+    - Print in ascending and descending using recursion.
+        
+4. **Sum of First N Natural Numbers**
+    
+    - Input: `5` → Output: `15`
+        
+5. **Reverse a String**
+    
+    - Recursively reverse a string.
+        
+
+---
+
+## 🧠 **Intermediate Level**
+
+6. **Check if a String is Palindrome**
+    
+    - Use recursion to check equality from ends inward.
+        
+7. **Power of a Number**
+    
+    - Compute `a^b` recursively. Try both `O(n)` and optimized `O(log n)` versions.
+        
+8. **Recursively Remove a Character from String**
+    
+    - Like: Remove all `'a'` from `"bananas"`.
+        
+9. **Count Zeros in a Number**
+    
+    - E.g., `204030` → `3 zeros`
+        
+10. **Sum of Digits**
+    
+
+- Input: `1234` → Output: `1+2+3+4 = 10`
+    
+
+---
+
+## 🔥 **Advanced & Tricky Recursion**
+
+11. **Generate All Subsequences of a String**
+    
+
+- Like subsets but for strings.
+    
+
+12. **Permutations of a String**
+    
+
+- All unique arrangements.
+    
+
+13. **Subset Sum**
+    
+
+- Generate all subset sums from an array.
+    
+
+14. **N-Queens Problem**
+    
+
+- Backtracking + recursion + chessboard 🧠💥
+    
+
+15. **Sudoku Solver**
+    
+
+- 🔗 Leetcode: [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
+    
+- Real deal for recursive backtracking logic.
+    
+
+---
+
+## 🐍 Bonus Challenges for Backtracking (aka Smart Recursion)
+
+16. **Rat in a Maze**
+    
+
+- Find all paths from start to end in a matrix.
+    
+
+17. **Word Search**
+    
+
+- 🔗 Leetcode: [79. Word Search](https://leetcode.com/problems/word-search/)
+    
+
+18. **Combination Sum**
+    
+
+- 🔗 Leetcode: [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
+    
+
+19. **Letter Combinations of Phone Number**
+    
+
+- 🔗 Leetcode: [17. Letter Combinations](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+    
+
+---
+
+## 💬 Wanna Dive Deeper?
+
+Tell me:
+
+- Which problem you want
+    
+- Which language (JS, Python, etc.)
+    
+- If you want code + step-by-step explanation
+    
+
+And I’ll hook you up fast, recursion homie style 🧠🔁🔥
