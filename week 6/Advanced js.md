@@ -123,6 +123,105 @@ console.log(calculator.add());      // Output: 15
 console.log(calculator.subtract()); // Output: 5
 ```
 
+# 🚀Object.freeze() and Object.seal()
+
+## ✅ **1️⃣ `Object.freeze()`**
+
+### What it does:
+
+- Makes **the entire object immutable**:
+    
+    - You **cannot add** new properties.
+        
+    - You **cannot remove** existing properties.
+        
+    - You **cannot change** existing property values.
+        
+    - You **cannot change property descriptors** (writable, configurable).
+        
+
+### Example:
+
+```js
+const obj = { name: "Achyuth", age: 24 };
+Object.freeze(obj);
+
+obj.age = 25;        // ❌ No change
+obj.city = "Kollam"; // ❌ Cannot add
+delete obj.name;     // ❌ Cannot delete
+
+console.log(obj); // { name: "Achyuth", age: 24 }
+```
+
+---
+
+## ✅ **2️⃣ `Object.seal()`**
+
+### What it does:
+
+- **Prevents adding or removing properties**.
+    
+- You **can still modify the values** of existing properties.
+    
+- Properties remain **writable** but **not configurable**.
+    
+- You **cannot change property attributes** (cannot make a property non-enumerable or non-writable).
+    
+
+### Example:
+
+```js
+const obj = { name: "Achyuth", age: 24 };
+Object.seal(obj);
+
+obj.age = 25;        // ✅ Allowed
+obj.city = "Kollam"; // ❌ Cannot add
+delete obj.name;     // ❌ Cannot delete
+
+console.log(obj); // { name: "Achyuth", age: 25 }
+```
+
+---
+
+## ✅ **Key Differences Table**
+
+|Feature|`Object.freeze()`|`Object.seal()`|
+|---|---|---|
+|Add properties|❌ Not allowed|❌ Not allowed|
+|Remove properties|❌ Not allowed|❌ Not allowed|
+|Modify existing values|❌ Not allowed|✅ Allowed|
+|Change property descriptors|❌ Not allowed|❌ Not allowed|
+|Makes object fully immutable|✅ Yes|❌ No (values can change)|
+
+---
+
+## ✅ Checking if an object is frozen or sealed:
+
+- Check if **frozen:**
+    
+
+```js
+Object.isFrozen(obj); // true / false
+```
+
+- Check if **sealed:**
+    
+
+```js
+Object.isSealed(obj); // true / false
+```
+
+---
+
+## 🚩 **Summary:**
+
+✅ Use **`Object.freeze()`** when you want **full immutability** of the object.  
+✅ Use **`Object.seal()`** when you want to **prevent adding/removing properties but allow value modifications.**
+
+---
+
+If you want, I can prepare **practice code snippets for deep cloning + freezing or sealing objects** to build your foundational JS mastery further. Let me know!
+
 # 🚀Type Casting in JavaScript
 
 Type casting (also known as **type conversion**) is the process of converting a value from one data type to another. In JavaScript, this can happen **implicitly (coercion)** or **explicitly (manual conversion).**
@@ -213,6 +312,336 @@ console.log("5" * "2"); // 10 (Both strings converted to numbers)
 ```
 
 
+
+# 🚀Hoisting 
+
+##  What is Hoisting?
+
+**Hoisting** is JavaScript’s default behavior of **moving declarations to the top of their scope (global or function) before code execution.**
+
+✅ Only **declarations are hoisted**, **not initializations**.
+
+---
+
+## ✅ **1️⃣ Variable Hoisting**
+
+### Using `var`:
+
+```js
+console.log(a); // undefined (not ReferenceError)
+var a = 10;
+```
+
+### What actually happens internally:
+
+```js
+var a;
+console.log(a); // undefined
+a = 10;
+```
+
+✅ **`var` declarations are hoisted and initialized with `undefined`.**
+
+---
+
+### Using `let` and `const`:
+
+```js
+console.log(b); // ❌ ReferenceError: Cannot access 'b' before initialization
+let b = 20;
+```
+
+✅ `let` and `const` are **hoisted but not initialized**.  
+✅ They remain in the **Temporal Dead Zone (TDZ)** from the start of the block until the line where they are initialized.
+
+---
+
+## ✅ **2️⃣ Function Hoisting**
+
+### Function Declarations:
+
+```js
+greet(); // ✅ Works
+
+function greet() {
+  console.log("Hello!");
+}
+```
+
+✅ Function declarations are **fully hoisted** (both name and body).
+
+---
+
+### Function Expressions:
+
+```js
+sayHi(); // ❌ TypeError: sayHi is not a function
+
+var sayHi = function() {
+  console.log("Hi!");
+}
+```
+
+Here, `var sayHi` is hoisted and initialized as `undefined`, but the **function definition is not hoisted**.
+
+---
+
+## ✅ **3️⃣ Summary Table**
+
+|Item|Hoisted|Initialized|
+|---|---|---|
+|`var`|✅ Yes|✅ `undefined`|
+|`let`, `const`|✅ Yes|❌ No (TDZ)|
+|Function declarations|✅ Yes|✅ Yes|
+|Function expressions (`var sayHi = function() {}`)|✅ Variable only|❌ No|
+
+---
+
+## ✅ **Practical Example:**
+
+```js
+function test() {
+  console.log(a); // undefined
+  var a = 5;
+  console.log(a); // 5
+
+  console.log(b); // ReferenceError
+  let b = 10;
+}
+test();
+```
+
+---
+
+## 🚩 Why it matters:
+
+✅ Understanding hoisting helps avoid bugs when accessing variables before they are declared.  
+✅ Helps clarify differences between `var`, `let`, `const`, and function handling in memory during execution.
+
+# 🚀Temporal Dead Zone(TDZ)
+
+## What is **Temporal Dead Zone (TDZ)?**
+
+The **Temporal Dead Zone** is the period between:
+
+✅ The **start of the block scope** (where the variable is hoisted), and  
+✅ The **line where the variable is initialized**,
+
+during which accessing the variable will throw a **ReferenceError**.
+
+---
+
+✅ **It applies to `let` and `const`.**  
+✅ It **does not apply to `var`** (since `var` is hoisted and initialized with `undefined`).
+
+---
+
+## ✅ **Example:**
+
+```js
+{
+    console.log(a); // ❌ ReferenceError: Cannot access 'a' before initialization
+    let a = 10;
+    console.log(a); // ✅ 10
+}
+```
+
+**Explanation:**
+
+- `let a` is **hoisted** to the top of the block scope.
+    
+- However, it is **not initialized** until `let a = 10;` is executed.
+    
+- Between the start of the block and the initialization, `a` is in the **Temporal Dead Zone**.
+    
+
+---
+
+## ✅ **Another example with `const`:**
+
+```js
+{
+    console.log(b); // ❌ ReferenceError
+    const b = 20;
+}
+```
+
+✅ Same TDZ behavior applies to `const`.
+
+---
+
+## ✅ **Example with `var` (no TDZ):**
+
+```js
+{
+    console.log(c); // ✅ undefined
+    var c = 30;
+    console.log(c); // ✅ 30
+}
+```
+
+✅ `var` is hoisted and initialized with `undefined`, so **no TDZ**.
+
+---
+
+## ✅ **Visual Understanding:**
+
+```js
+{
+    // TDZ starts here for `x`
+    let x = 5; // TDZ ends here
+}
+```
+
+During the TDZ, **you cannot access or use the variable**.
+
+---
+
+## ✅ **Why was TDZ introduced?**
+
+- To **catch errors early** (e.g., using variables before declaring them).
+    
+- To support **block scoping** cleanly with `let` and `const`.
+    
+- To avoid unexpected behaviors seen with `var` hoisting.
+    
+
+---
+
+## ✅ **Summary Table:**
+
+|Behavior|`var`|`let` / `const`|
+|---|---|---|
+|Hoisted|✅ Yes|✅ Yes|
+|Initialized|✅ `undefined`|❌ No|
+|Can access before initialization|✅ Yes|❌ No (TDZ)|
+|Error if accessed before initialization|❌ No|✅ ReferenceError|
+
+# 🚀 Callback
+
+## **What is a Callback?**
+
+A **callback** is **a function passed as an argument to another function** so that it can be executed **after some operation is completed**.
+
+✅ It **“calls back”** when the operation finishes.
+
+✅ **It enables asynchronous and modular behavior** in JavaScript.
+
+---
+
+## ✅ **Simple Example:**
+
+```js
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
+
+function sayBye() {
+    console.log("Goodbye!");
+}
+
+greet("Achyuth", sayBye);
+```
+
+**Output:**
+
+```
+Hello Achyuth
+Goodbye!
+```
+
+✅ Here, `sayBye` is a **callback function**, executed **after `greet` prints "Hello Achyuth".**
+
+---
+
+## ✅ **Real-world Example: Using `setTimeout`**
+
+```js
+console.log("Start");
+
+setTimeout(function() {
+    console.log("Executed after 2 seconds");
+}, 2000);
+
+console.log("End");
+```
+
+**Output:**
+
+```
+Start
+End
+Executed after 2 seconds
+```
+
+✅ The **function passed to `setTimeout` is a callback**, executed **after 2 seconds**, demonstrating **asynchronous behavior**.
+
+---
+
+## ✅ **Callback with Array Methods**
+
+Many array methods use callbacks internally.
+
+**Example: `forEach`:**
+
+```js
+const arr = [1, 2, 3];
+
+arr.forEach(function(num) {
+    console.log(num * 2);
+});
+```
+
+**Output:**
+
+```
+2
+4
+6
+```
+
+✅ The function inside `forEach` is a callback executed for each element.
+
+---
+
+## ✅ **Why are Callbacks Important?**
+
+✅ Allow **asynchronous operations** (network requests, reading files, timers).  
+✅ Enable **modular, reusable code**.  
+✅ Are the foundation for **event handling** in browsers (`onclick`, `onsubmit` handlers).
+
+---
+
+## 🚩 **Problems with Callbacks: Callback Hell**
+
+Nested callbacks can lead to:
+
+```js
+doTask1(function() {
+    doTask2(function() {
+        doTask3(function() {
+            // ...
+        });
+    });
+});
+```
+
+❌ This is called **callback hell** and makes code hard to read.
+
+✅ Modern JavaScript uses **Promises and `async/await`** to handle asynchronous operations more cleanly.
+
+---
+
+## ✅ **Summary:**
+
+✅ A **callback is a function passed to another function to execute later.**  
+✅ Used heavily in **asynchronous programming** in JavaScript.  
+✅ Enables modular, non-blocking behavior in your projects.
+
+---
+
+If you want, I can prepare **callback practice problems (file reading, API simulation, or event handling) for hands-on clarity** to strengthen your JS skill. Let me know!
 
 # 🚀JavaScript Event Loop 
 

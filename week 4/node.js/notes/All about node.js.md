@@ -212,6 +212,249 @@ In Node.js, modules are used to organize your code into smaller, manageable part
 A Node module is like a box of tools for developers. You can use tools built into Node.js, create your own tools, or borrow tools from others (via npm). Modules help you save time, stay organized, and build apps faster!
 
 
+
+
+
+# What is Global objects?
+
+## 🚩 What are Node.js Global Objects?
+
+**Global Objects in Node.js** are objects available **in every module** without requiring an `import` or `require`.
+
+They are globally accessible **anywhere in your Node.js environment**, allowing you to access functionalities like timers, file paths, buffers, and process information.
+
+They are similar to `window` in browsers, but Node.js **does not have `window`**; instead, it provides its own set of globals tailored for server-side JavaScript.
+
+---
+
+## 🚩 Common Node.js Global Objects
+
+Here are **important Node.js global objects you will actually use**:
+
+---
+
+### 1️⃣ `global`
+
+- The **global namespace object** in Node.js (like `window` in browsers).
+    
+- All global objects, functions, and variables are members of `global`.
+    
+
+**Example:**
+
+```js
+global.myValue = 10;
+console.log(myValue); // 10
+```
+
+But using `global` for your own variables is **not recommended** to avoid conflicts.
+
+---
+
+### 2️⃣ `process`
+
+- Provides **information and control over the current Node.js process**.
+    
+
+Examples:
+
+```js
+console.log(process.pid); // Process ID
+console.log(process.cwd()); // Current working directory
+console.log(process.env); // Environment variables
+process.exit(); // Exit the process
+```
+
+---
+
+### 3️⃣ `__dirname`
+
+- The **absolute path of the directory containing the currently executing file**.
+    
+
+**Example:**
+
+```js
+console.log(__dirname);
+// /Users/username/my-app
+```
+
+---
+
+### 4️⃣ `__filename`
+
+- The **absolute path of the currently executing file**.
+    
+
+**Example:**
+
+```js
+console.log(__filename);
+// /Users/username/my-app/index.js
+```
+
+---
+
+### 5️⃣ `module`
+
+- Refers to the **current module**, allowing you to understand module-related metadata.
+    
+
+```js
+console.log(module.exports);
+```
+
+---
+
+### 6️⃣ `exports`
+
+- A **shorthand reference to `module.exports`** for exporting functionalities from a module.
+    
+
+```js
+exports.sayHello = () => console.log("Hello!");
+```
+
+---
+
+### 7️⃣ `require()`
+
+- Used to **import modules** in Node.js.
+    
+
+```js
+const fs = require('fs');
+```
+
+---
+
+### 8️⃣ `Buffer`
+
+- Provides a way to **handle binary data** in Node.js.
+    
+- Useful for reading files, handling streams, or working with raw data.
+    
+
+**Example:**
+
+```js
+const buffer = Buffer.from('hello');
+console.log(buffer);
+// <Buffer 68 65 6c 6c 6f>
+```
+
+---
+
+### 9️⃣ Timers (`setTimeout`, `setInterval`, `setImmediate`, `clearTimeout`, etc.)
+
+Node.js provides timer functions globally, similar to the browser:
+
+- `setTimeout(callback, delay)`
+    
+- `setInterval(callback, delay)`
+    
+- `setImmediate(callback)` – executes after I/O events.
+    
+- `clearTimeout(timer)`
+    
+- `clearInterval(timer)`
+    
+
+**Example:**
+
+```js
+setTimeout(() => {
+    console.log("Executed after 1 second");
+}, 1000);
+```
+
+---
+
+## 🚩 List of Other Node.js Globals
+
+|Global|Purpose|
+|---|---|
+|`console`|Logging to stdout/stderr.|
+|`clearImmediate()`|Clears an immediate timer set with `setImmediate()`.|
+|`clearInterval()`|Clears an interval timer.|
+|`clearTimeout()`|Clears a timeout timer.|
+|`setImmediate()`|Executes a callback immediately after I/O events.|
+|`setInterval()`|Calls a function repeatedly with a fixed delay.|
+|`setTimeout()`|Calls a function after a delay.|
+
+---
+
+## 🚩 Are there truly global variables?
+
+**Yes, but with caution:**
+
+- If you assign to a variable without `let`, `var`, or `const`, it **becomes global**:
+    
+    ```js
+    x = 5; // becomes global (not recommended)
+    ```
+    
+- Using `global.variableName` explicitly is clearer but still **not a good practice for application logic** to avoid conflicts and hidden dependencies.
+    
+
+---
+
+## 🚩 Key Points to Remember
+
+✅ Node.js global objects:
+
+- Are **available in every module** automatically.
+    
+- Include `global`, `process`, `__dirname`, `__filename`, `module`, `exports`, `require`, `Buffer`, `console`, and timers.
+    
+
+✅ Node.js **does not have `window` or `document`** as it is a server-side environment.
+
+✅ Use global objects wisely for:
+
+- Environment management (`process`).
+    
+- Path management (`__dirname`, `__filename`).
+    
+- Module management (`require`, `exports`).
+    
+- Buffer and binary data handling (`Buffer`).
+    
+- Timing and intervals (`setTimeout`, `setInterval`).
+    
+
+---
+
+## 🚩 Example Summary Project
+
+**`index.js`:**
+
+```js
+console.log("Current directory:", __dirname);
+console.log("Current file:", __filename);
+
+setTimeout(() => {
+    console.log("Printed after 2 seconds");
+}, 2000);
+
+console.log("Process PID:", process.pid);
+console.log("Environment:", process.env.NODE_ENV);
+
+const fs = require('fs');
+console.log("fs module loaded:", typeof fs.readFile);
+```
+
+✅ This example shows:
+
+- Accessing file and directory paths.
+    
+- Using a timer.
+    
+- Checking process data.
+    
+- Using `require` to import a module globally.
+    
+
 # Imports 
 
 In **Node.js**, **imports** are used to bring in external modules, libraries, or custom code into your application. This allows you to use code from other files or packages without rewriting it. Imports are a fundamental concept in modular programming, making it easier to manage and reuse code.

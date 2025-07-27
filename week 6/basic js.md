@@ -2736,4 +2736,127 @@ sayHello();
 ✔️ **Use `call()`, `apply()`, or `bind()` to explicitly set `this`.**  
 ✔️ **Inside object methods, `this` refers to the object.**
 
-Let me know if you need more examples! 🚀
+
+
+# 🚀Difference between regular function and arrow function
+
+
+## ✅ **1️⃣ Syntax difference**
+
+### Traditional function:
+
+```js
+function add(a, b) {
+  return a + b;
+}
+```
+
+### Arrow function:
+
+```js
+const add = (a, b) => a + b;
+```
+
+---
+
+## ✅ **2️⃣ `this` binding**
+
+- **Traditional functions** have their **own `this` context**, which changes depending on **how the function is called** (object method, normal function, event handler, etc.).
+    
+- **Arrow functions do NOT have their own `this`.**  
+    They **lexically bind `this` from their surrounding scope.**
+    
+
+**Example:**
+
+```js
+const obj = {
+  name: "Achyuth",
+  showNameTraditional: function() {
+    console.log(this.name); // "Achyuth"
+  },
+  showNameArrow: () => {
+    console.log(this.name); // undefined (takes `this` from outside, likely `window` in browsers)
+  }
+};
+obj.showNameTraditional();
+obj.showNameArrow();
+```
+
+---
+
+## ✅ **3️⃣ `arguments` object**
+
+- **Traditional functions** have access to the **`arguments` object**, which holds all arguments passed to the function.
+    
+- **Arrow functions do NOT have their own `arguments`.**  
+    They inherit `arguments` from their outer scope (if any), or `arguments` will be undefined.
+    
+
+**Example:**
+
+```js
+function showArgs() {
+  console.log(arguments);
+}
+showArgs(1, 2, 3); // [1, 2, 3]
+
+const showArgsArrow = () => {
+  console.log(arguments);
+};
+showArgsArrow(1, 2, 3); // ReferenceError: arguments is not defined
+```
+
+---
+
+## ✅ **4️⃣ Constructor usage**
+
+- **Traditional functions** can be used as **constructors** with `new` to create instances:
+    
+
+```js
+function Person(name) {
+  this.name = name;
+}
+const p = new Person("Don");
+```
+
+- **Arrow functions CANNOT be used as constructors.**  
+    Using `new` with an arrow function will throw:
+    
+    ```
+    TypeError: Arrow functions cannot be used as constructors
+    ```
+    
+
+---
+
+## ✅ **5️⃣ Methods in objects**
+
+- Arrow functions should **NOT** be used as methods in objects if you need correct `this` binding.
+    
+- Traditional functions are **better suited** for object methods.
+    
+
+---
+
+## ✅ **Summary Table**
+
+|Aspect|Traditional Function|Arrow Function|
+|---|---|---|
+|**Syntax**|`function fname() {}`|`const fname = () => {}`|
+|**`this`**|Own dynamic `this`|Lexical `this`|
+|**`arguments`**|Available|Not available|
+|**Constructor**|Can use `new`|Cannot use `new`|
+|**Best for methods**|Yes|No (if needs `this`)|
+
+---
+
+## ⚡ Practical Rule:
+
+✅ Use **arrow functions for callbacks, simple functional operations, and when you need lexical `this`.**  
+✅ Use **traditional functions for object methods, constructors, and when you need dynamic `this` or `arguments`.**
+
+---
+
+If you want, I can also prepare **practice examples showing `this` differences visually** for deeper clarity. Let me know!

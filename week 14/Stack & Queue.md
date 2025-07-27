@@ -239,6 +239,230 @@ console.log(llStack.pop()); // 20
 | **Implementation** | Arrays (simple) or Linked Lists (optimized) |
 
 
+# How stacks are used in undo-redo operations?
+## 1️⃣ What is Undo-Redo?
+
+- **Undo:** Reverse the last action.
+    
+- **Redo:** Re-apply the action you just undid.
+    
+
+---
+
+## 2️⃣ Why use **Stacks**?
+
+Stacks use **LIFO (Last In, First Out)** behavior:
+
+- The **last action performed** should be the **first action undone**.
+    
+- Perfect for undo-redo workflows.
+    
+
+---
+
+## 3️⃣ **How it works using Two Stacks:**
+
+✅ **Stack 1: Undo Stack**
+
+- Stores all actions performed by the user.
+    
+- When the user presses **Undo**, pop the last action from the Undo Stack and perform its reverse action.
+    
+
+✅ **Stack 2: Redo Stack**
+
+- Stores actions that have been undone.
+    
+- When the user presses **Redo**, pop from the Redo Stack and perform the action again.
+    
+
+---
+
+## 4️⃣ **Step-by-Step Example:**
+
+### Scenario:
+
+You are typing:
+
+- **Type 'A'**
+    
+- **Type 'B'**
+    
+- **Type 'C'**
+    
+
+### Stacks after typing:
+
+```
+Undo Stack: ['A', 'B', 'C']
+Redo Stack: []
+```
+
+---
+
+### **Press Undo:**
+
+- Pop 'C' from Undo Stack.
+    
+- Remove 'C' from the text.
+    
+- Push 'C' onto Redo Stack.
+    
+
+Now:
+
+```
+Undo Stack: ['A', 'B']
+Redo Stack: ['C']
+```
+
+---
+
+### **Press Undo again:**
+
+- Pop 'B' from Undo Stack.
+    
+- Remove 'B' from the text.
+    
+- Push 'B' onto Redo Stack.
+    
+
+Now:
+
+```
+Undo Stack: ['A']
+Redo Stack: ['C', 'B']
+```
+
+---
+
+### **Press Redo:**
+
+- Pop 'B' from Redo Stack.
+    
+- Add 'B' back to the text.
+    
+- Push 'B' back onto Undo Stack.
+    
+
+Now:
+
+```
+Undo Stack: ['A', 'B']
+Redo Stack: ['C']
+```
+
+---
+
+### **Perform new action after undo:**
+
+If you type 'D' now:
+
+- The **Redo Stack is cleared**.
+    
+- 'D' is pushed onto the Undo Stack.
+    
+
+Now:
+
+```
+Undo Stack: ['A', 'B', 'D']
+Redo Stack: []
+```
+
+This ensures redo actions remain consistent with user actions.
+
+---
+
+## 5️⃣ **Simple JavaScript Implementation**
+
+```javascript
+class UndoRedo {
+    constructor() {
+        this.undoStack = [];
+        this.redoStack = [];
+    }
+
+    performAction(action) {
+        this.undoStack.push(action);
+        this.redoStack = []; // clear redo stack on new action
+        console.log(`Performed: ${action}`);
+    }
+
+    undo() {
+        if (this.undoStack.length === 0) {
+            console.log("Nothing to undo");
+            return;
+        }
+        const action = this.undoStack.pop();
+        this.redoStack.push(action);
+        console.log(`Undo: ${action}`);
+    }
+
+    redo() {
+        if (this.redoStack.length === 0) {
+            console.log("Nothing to redo");
+            return;
+        }
+        const action = this.redoStack.pop();
+        this.undoStack.push(action);
+        console.log(`Redo: ${action}`);
+    }
+
+    showStacks() {
+        console.log(`Undo Stack: [${this.undoStack.join(', ')}]`);
+        console.log(`Redo Stack: [${this.redoStack.join(', ')}]`);
+    }
+}
+
+// Usage:
+const editor = new UndoRedo();
+
+editor.performAction('Type A');
+editor.performAction('Type B');
+editor.performAction('Type C');
+
+editor.showStacks();
+
+editor.undo();
+editor.undo();
+
+editor.showStacks();
+
+editor.redo();
+
+editor.showStacks();
+
+editor.performAction('Type D');
+
+editor.showStacks();
+```
+
+---
+
+## ✅ Summary:
+
+- Use **two stacks for undo-redo**:
+    
+    - **Undo Stack** → store performed actions.
+        
+    - **Redo Stack** → store undone actions.
+        
+- On **Undo**, pop from Undo, push to Redo.
+    
+- On **Redo**, pop from Redo, push to Undo.
+    
+- On **new action after undo**, clear Redo stack.
+    
+
+---
+
+If you want:  
+✅ A **diagram showing arrows and stacks** for your notes.  
+✅ Real-world **text editor simulation code** with undo-redo for practice.  
+✅ A **DSA interview explanation cheat sheet** on this concept.
+
+let me know!
 # **Queue in JavaScript: In-Depth Guide**
 
 A **Queue** is a **First-In-First-Out (FIFO)** data structure where the first element added is the first one removed. It's widely used in scenarios like task scheduling, printer queues, and breadth-first search (BFS) algorithms.
@@ -1522,4 +1746,170 @@ This exercise helps you understand:
 - How to use one data structure to simulate another
 - The importance of operation costs in data structure design
 
-Would you like me to explain any part in more detail or provide additional examples?
+
+
+
+
+# What is a Priority Queue?
+
+A **Priority Queue** is an **abstract data structure** similar to a queue, **but each element has a priority**. Elements are **removed based on priority, not insertion order**.
+
+✅ **Higher priority elements are dequeued before lower priority elements**, regardless of when they were inserted.
+
+---
+
+### 🚦 Comparison with Other Structures:
+
+|Structure|Removal Order|
+|---|---|
+|**Queue**|FIFO (First-In, First-Out)|
+|**Stack**|LIFO (Last-In, First-Out)|
+|**Priority Queue**|Based on **priority** (not insertion order)|
+
+---
+
+## 🚀 Real-World Examples:
+
+✅ Emergency room (critical patients treated first)  
+✅ Task scheduling in OS (higher priority processes run first)  
+✅ Algorithms like Dijkstra’s shortest path, Huffman coding.
+
+---
+
+## 🚀 Types of Priority Queues:
+
+- **Min Priority Queue:** Lower priority value = higher priority (e.g., priority `1` is higher than `5`).
+    
+- **Max Priority Queue:** Higher priority value = higher priority (e.g., priority `5` is higher than `1`).
+    
+
+---
+
+## 🚀  Implementation using queue
+
+##           🚀 Approach
+
+Queues are **FIFO**, but Priority Queues need **priority-based removal**.
+
+Since we cannot directly leverage the queue’s nature for priority, we will:  
+✅ **Maintain the queue in sorted order upon insertion** based on priority:
+
+- **Lower priority number = higher priority** (Min-Priority Queue).  
+    ✅ On `dequeue`, simply `shift()` to remove the front element (highest priority).  
+    ✅ On `peek`, return `queue[0]`.
+    
+
+**⚠️ Note:** This results in `O(n)` insertion time and `O(1)` removal, which is acceptable for understanding but not efficient for large-scale use (use heaps in real systems).
+
+---
+
+## 🚀 JavaScript Implementation
+
+```javascript
+class PriorityQueueUsingQueue {
+    constructor() {
+        this.queue = []; // Array used as a queue
+    }
+
+    // Insert an element with its priority
+    enqueue(value, priority) {
+        const newItem = { value, priority };
+        let added = false;
+
+        // Insert at the correct position to maintain priority order
+        for (let i = 0; i < this.queue.length; i++) {
+            if (newItem.priority < this.queue[i].priority) {
+                this.queue.splice(i, 0, newItem);
+                added = true;
+                break;
+            }
+        }
+
+        // If the new item has the lowest priority, push it to the end
+        if (!added) {
+            this.queue.push(newItem);
+        }
+    }
+
+    // Remove and return the element with the highest priority (front)
+    dequeue() {
+        if (this.isEmpty()) {
+            console.log("Queue is empty.");
+            return null;
+        }
+        return this.queue.shift();
+    }
+
+    // Peek at the element with the highest priority
+    peek() {
+        if (this.isEmpty()) {
+            console.log("Queue is empty.");
+            return null;
+        }
+        return this.queue[0];
+    }
+
+    // Check if the queue is empty
+    isEmpty() {
+        return this.queue.length === 0;
+    }
+
+    // Utility to display the current queue
+    print() {
+        console.log(this.queue.map(item => `${item.value} (Priority: ${item.priority})`).join(" -> "));
+    }
+}
+
+// Example usage:
+const pq = new PriorityQueueUsingQueue();
+pq.enqueue("Eat", 2);
+pq.enqueue("Code", 1);
+pq.enqueue("Sleep", 3);
+pq.enqueue("Walk", 2);
+
+pq.print(); // Expected: Code (1) -> Eat (2) -> Walk (2) -> Sleep (3)
+
+console.log(pq.dequeue()); // { value: 'Code', priority: 1 }
+pq.print(); // Eat (2) -> Walk (2) -> Sleep (3)
+
+console.log(pq.peek()); // { value: 'Eat', priority: 2 }
+```
+
+---
+
+## 🚀 Summary:
+
+✅ This Priority Queue using a Queue:
+
+- Inserts in sorted order (`O(n)`) to maintain priority.
+    
+- Dequeues the highest priority element efficiently (`O(1)`).
+    
+- Good for **practicing Priority Queue logic while reinforcing queue operations**.
+    
+
+
+## 🚀 Why Use Priority Queue?
+
+✅ Allows **efficient management of prioritized tasks**.  
+✅ Core in **graph algorithms, CPU scheduling, simulations, event management**.  
+✅ Ensures **predictable and structured task handling** in projects and system design.
+
+---
+
+## 🚀 Summary:
+
+✅ A **Priority Queue** prioritizes element removal based on their priority, not insertion order.  
+✅ Efficiently implemented using **binary heaps for O(log n) operations**.  
+✅ Essential for **interview DSA, system design, and real projects**.
+
+---
+
+If you want:  
+✅ A **visual diagram illustrating how enqueue and dequeue work step-by-step** in this implementation,  
+✅ **Practice problems** using Priority Queues for LeetCode,  
+✅ A **Max-Heap Priority Queue implementation** for comparison and mastery,
+
+
+
+
