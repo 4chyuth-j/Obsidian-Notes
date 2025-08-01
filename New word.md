@@ -247,3 +247,37 @@ Here are some simple **word usage examples** for **allegation** and **accusation
     
     - _He completely **butchered** the speech by forgetting his lines._
     - _She **butchered** my haircut—it looks terrible!_
+
+# Peeping
+The word **"peeping"** means:
+
+### 👉 **To look quickly or secretly, often through a small opening or from a hidden place.**
+
+### **peeping tom** behavior — someone secretly watching others, especially in a creepy or inappropriate way.
+
+---
+
+### 🧠 **Simple Meaning:**
+
+Looking at something in a sneaky or subtle way — often when you're **not supposed to**.
+
+---
+
+### 🔤 **Examples:**
+
+- _She was peeping through the keyhole to see what was happening inside the room._
+    
+- _The child peeped out from behind the curtain._
+    
+- _I caught him peeping at my phone screen._
+    
+
+---
+
+### ⚠️ In slang or informal use:
+
+Sometimes **"peeping"** can refer to **peeping tom** behavior — someone secretly watching others, especially in a creepy or inappropriate way.
+
+---
+
+Let me know if you want synonyms or how to use it in a sentence for writing/speaking!
