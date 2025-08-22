@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cfb998a02f2a0e4a",
+            "id": "91839b6a25a5c208",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week 17/Typescript intro.md",
+                "file": "New word.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Typescript intro"
+              "title": "New word"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 216.5
   },
   "right": {
     "id": "199a22f65293d719",
@@ -155,6 +155,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -163,17 +164,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cfb998a02f2a0e4a",
+  "active": "520919611f931929",
   "lastOpenFiles": [
+    "week 18",
     "week 16/Sql basics.md",
-    "week 16/SQL Theory.md",
-    "week 17/Typescript intro.md",
     "week 14/Map, Set , WeakMap & WeakSet.md",
-    "week 17",
-    "week 13/Linked list.md",
-    "week 13/OOPs in JavaScript.md",
-    "week 13/Time and Space Complexity.md",
+    "New word.md",
+    "week 17/OOPs in TS.md",
+    "week 17/Typescript intro.md",
+    "online session (communication)/idium.md",
+    "new phrases.md",
     "week 13/DSA.md",
+    "online session (communication)/misspronouced word.md",
+    "online session (communication)/Phrase.md",
+    "week 6/basic js.md",
+    "week 13/OOPs in JavaScript.md",
+    "week 13/Linked list.md",
+    "week 16/SQL Theory.md",
+    "week 17",
+    "week 13/Time and Space Complexity.md",
     "week 5/Advanced mongodb.md",
     "Pasted image 20250803194819.png",
     "Pasted image 20250803194728.png",
@@ -186,23 +195,15 @@
     "Pasted image 20250803194120.png",
     "Pasted image 20250803194026.png",
     "week 14/hash map.md",
-    "New word.md",
     "week 15/Graph.md",
     "week 16",
     "week 15/Tree.md",
     "week 15/Heap.md",
     "week 15/Trie.md",
-    "online session (communication)/Phrase.md",
     "week 6/Advanced js.md",
-    "week 6/basic js.md",
     "week 5/Mongodb.md",
     "week 4/Express.js/Express js.md",
     "week 4/node.js/notes/All about node.js.md",
-    "week 4/node.js/notes/server.listen().md",
-    "week 4/node.js/notes/visual representation of node js.md",
-    "week 4/node.js/notes/Advanced topics.md",
-    "research.md",
-    "week 4/node.js/to learn.md",
     "week 15",
     "week 14",
     "week 13",
