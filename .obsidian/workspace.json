@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "New word.md",
+                "file": "week 18/React basics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "New word"
+              "title": "React basics"
             }
           }
         ]
@@ -164,23 +164,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "520919611f931929",
+  "active": "91839b6a25a5c208",
   "lastOpenFiles": [
-    "week 18",
-    "week 16/Sql basics.md",
-    "week 14/Map, Set , WeakMap & WeakSet.md",
+    "Pasted image 20250909201919.png",
+    "Pasted image 20250909164637.png",
+    "Pasted image 20250909103231.png",
     "New word.md",
+    "week 18/React basics.md",
+    "week 14/Sorting algorithms.md",
+    "week 13/DSA.md",
+    "week 14/Map, Set , WeakMap & WeakSet.md",
+    "new phrases.md",
+    "week 16/SQL Theory.md",
+    "week 16/Sql basics.md",
+    "week 6/basic js.md",
+    "week 18",
     "week 17/OOPs in TS.md",
     "week 17/Typescript intro.md",
     "online session (communication)/idium.md",
-    "new phrases.md",
-    "week 13/DSA.md",
     "online session (communication)/misspronouced word.md",
     "online session (communication)/Phrase.md",
-    "week 6/basic js.md",
     "week 13/OOPs in JavaScript.md",
     "week 13/Linked list.md",
-    "week 16/SQL Theory.md",
     "week 17",
     "week 13/Time and Space Complexity.md",
     "week 5/Advanced mongodb.md",
@@ -192,8 +197,6 @@
     "Pasted image 20250803194418.png",
     "Pasted image 20250803194242.png",
     "Pasted image 20250803194157.png",
-    "Pasted image 20250803194120.png",
-    "Pasted image 20250803194026.png",
     "week 14/hash map.md",
     "week 15/Graph.md",
     "week 16",
@@ -202,8 +205,6 @@
     "week 15/Trie.md",
     "week 6/Advanced js.md",
     "week 5/Mongodb.md",
-    "week 4/Express.js/Express js.md",
-    "week 4/node.js/notes/All about node.js.md",
     "week 15",
     "week 14",
     "week 13",
@@ -211,7 +212,6 @@
     "online session (communication)/phrase",
     "online session (communication)",
     "Untitled.canvas",
-    "week 6",
-    "week 5"
+    "week 6"
   ]
 }

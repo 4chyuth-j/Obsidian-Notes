@@ -5,7 +5,39 @@ _"Crinkle"_ refers to a sharp, rustling sound made by thin, flexible materials l
 
 1. _She tried to open the bag of chips quietly, but the crinkle of the wrapper gave her away._
 2. _The crinkle of candy wrappers filled the theater as people unwrapped their sweets before the movie started.
+# Desperate
 
+### ✅ Meaning of _desperate_:
+
+1. **Feeling hopeless or having no other option**
+    
+    > “He was desperate for help after being stranded.”
+    
+2. **Willing to try anything because of urgency or despair**
+    
+    > “In a desperate attempt to escape, he jumped into the river.”
+    
+3. **Extreme or intense**
+    
+    > “There was a desperate shortage of food.”
+    
+
+---
+
+### ✅ Usage Examples:
+
+- “She made a **desperate** phone call when she realized she was lost.”
+    
+- “They were **desperate** to find a solution before time ran out.”
+    
+- “His team took a **desperate** shot in the last seconds of the game.”
+    
+
+---
+
+👉 In casual/slang use, if someone says _“He’s desperate”_, it can also mean **trying too hard for attention, love, or approval**.
+
+Want me to also give you some **synonyms of desperate** so you can use alternatives in different contexts?
 # **Diabolical
 
 **Diabolic** or **Diabolical** means **extremely evil or wicked**, like something a villain or demon would do.
@@ -19,6 +51,93 @@ _"Crinkle"_ refers to a sharp, rustling sound made by thin, flexible materials l
 
 It's often used to describe something **cruel, wicked, or extremely bad**. 😈
 
+# Diplomatic
+
+**Diplomatic** describes a way of dealing with people or situations that is **careful, tactful, and considerate**, especially to avoid offending others or to maintain good relationships. It’s often used for people who handle sensitive matters or conflicts calmly and wisely.
+
+---
+
+### 📖 **Usage Examples:**
+
+1. **Adjective describing a person’s behavior:**  
+    _She gave a **diplomatic** response to the complaint so that no one felt hurt._
+    
+2. **Adjective describing a method or action:**  
+    _We need a **diplomatic** solution to the dispute between the two teams._
+    
+3. **In politics or negotiations:**  
+    _The ambassador’s **diplomatic** skills helped prevent a major conflict._
+    
+
+---
+
+### ➤ Related words:
+
+- **Diplomacy** – The art of handling affairs tactfully.
+    
+- **Diplomat** – A person who represents a country and manages relations with others.
+    
+
+# Dispute(വാക് തർക്കം)
+
+A **dispute** is a **disagreement, argument, or conflict** between two or more people, groups, or parties. It usually involves differing opinions, interests, or claims, and sometimes requires resolution or negotiation.
+
+---
+
+### 📖 **Usage Examples:**
+
+1. **Between two people:**  
+    _There was a **dispute** between the neighbors about the property boundary._
+    
+2. **At work:**  
+    _The **dispute** over salary increases led to a long negotiation between management and employees._
+    
+3. **In legal or political matters:**  
+    _The countries are trying to resolve the **dispute** over water rights peacefully._
+    
+
+---
+
+### ➤ Related words:
+
+- **Disagreement** – A simpler word for not agreeing.
+    
+- **Conflict** – A stronger form of dispute, sometimes violent or serious.
+    
+- **Resolution** – Solving the dispute or argument.
+    
+
+### ✅ **Difference between _Dispute_ and _Riot(കലാപം)_**
+
+|Feature|**Dispute**|**Riot**|
+|---|---|---|
+|**Meaning**|A disagreement or argument between individuals, groups, or organizations.|A violent disturbance by a crowd, often involving destruction, fighting, or protest.|
+|**Nature**|Usually verbal or formal disagreements; can be resolved through discussion or negotiation.|Physical and aggressive behavior; often chaotic and harmful.|
+|**Intensity**|Mild to moderate.|Severe, dangerous, and uncontrolled.|
+|**Examples**|A **dispute** over a contract.|A **riot** after a political decision.|
+|**Legal aspect**|May be handled in court or through mediation.|Usually involves police intervention and arrests.|
+
+---
+
+### 📖 **Examples:**
+
+1. **Dispute:**  
+    _The **dispute** between the two companies was settled out of court._
+    
+2. **Riot:**  
+    _The protest escalated into a **riot**, and several people were injured._
+    
+
+---
+
+### ➤ Summary:
+
+- A **dispute** is a disagreement — it’s more about opinions or claims.
+    
+- A **riot** is violent unrest — it’s more about uncontrolled action and chaos.
+    
+
+Let me know if you want examples from current events or how to resolve disputes peacefully!
 # **Scepticism(സംശയം)
 
 **Scepticism** means **doubt or questioning something before believing it**. It is when you **don’t accept something immediately** and want proof or more information.
@@ -446,4 +565,344 @@ It’s used when describing scenes with a lot of death and devastation.
 
 👉 In short: **Carnage = large-scale slaughter and destruction.**
 
-Do you want me to also show you how to use it in a **figurative way** (not about actual killing, but like in debates or sports)?
+# Carnage and Massacre
+
+### **Carnage**
+
+👉 Means _massive killing and bloodshed_, often in a very violent way.
+
+- It focuses on the _horror and gore_ of the scene.
+    
+- Example: _“The battlefield was full of carnage.”_
+    
+
+### **Massacre**
+
+👉 Means _killing a large number of people (or sometimes animals)_, usually cruel and one-sided.
+
+- It focuses on the _scale and unfairness_ of the killing.
+    
+- Example: _“The innocent villagers were massacred.”_
+    
+
+---
+
+### ⚔️ Key Difference:
+
+- **Carnage** = emphasizes the _bloody violence_ itself.
+    
+- **Massacre** = emphasizes the _large-scale killing, usually of helpless victims_.
+    
+
+So, they overlap, but they’re not identical.  
+👉 A **massacre** can cause **carnage**, but **carnage** doesn’t always mean a massacre.
+
+Do you want me to give you a **simple real-life example** to clearly show the difference?
+# Vengeance 
+
+**Vengeance** simply means:  
+👉 _Payback for a wrong done to you._
+
+Like when someone hurts you, and you want to hurt them back — that feeling of wanting revenge is **vengeance**.
+
+Example:
+
+- If someone breaks your phone on purpose, and later you break theirs to “teach them a lesson,” that’s vengeance.
+    
+
+In short: **Vengeance = revenge / punishment in return.**
+
+Want me to also show you how it’s different from **justice**?
+
+# Stoicism
+
+👉 **Stoicism** is a way of thinking (a philosophy) that teaches you to:
+
+- Stay **calm and strong** no matter what happens.
+    
+- Focus only on what you **can control**.
+    
+- Accept what you **cannot control** without getting upset.
+    
+
+---
+
+### 🧘 Example in simple life:
+
+- If it rains on your wedding day → You can’t control the weather. Instead of crying, a Stoic would say: _“Okay, I’ll enjoy it anyway.”_
+    
+- If someone insults you → You can’t control their words, but you can control your reaction. So a Stoic would stay calm instead of fighting.
+    
+
+---
+
+### In short:
+
+**Stoicism = controlling your mind, not the world.**  
+It’s about being peaceful inside, even when life outside is messy.
+
+
+# Gaslighting
+
+
+👉 Gaslighting is when someone **manipulates you into doubting your own reality, memory, or feelings**.
+
+- They make you question yourself, so you start believing _they’re right_ and _you’re wrong_, even when you’re not.
+    
+
+---
+
+### 🔎 Example in daily life
+
+- You see your friend break your phone. When you confront him, he says:  
+    _“What? I never touched your phone. You’re imagining things.”_
+    
+- After hearing this many times, you start wondering: _“Wait… did I really see it wrong?”_
+    
+
+That’s **gaslighting** → making you doubt your own eyes, memory, or sanity.
+
+---
+
+### ⚡ Key signs of gaslighting:
+
+1. They **deny** what you saw/heard.
+    
+2. They say you’re **overreacting** or “too sensitive.”
+    
+3. They **twist facts** to make you feel guilty.
+    
+4. Over time, you lose confidence in your own judgment.
+    
+
+---
+
+👉 In short:  
+**Gaslighting = mind game where someone makes you question your own reality.**
+
+# Sue
+“Suing” comes from the verb **to sue**, which means **to take someone to court** or **file a legal case against someone** (usually to claim money for damages or wrongdoing).
+
+### Meaning:
+
+- **Suing** = the act of starting a lawsuit against a person, company, or organization.
+    
+
+### Usage in sentences:
+
+1. _She is **suing** her landlord for not returning the security deposit._
+    
+2. _The company is **suing** a competitor for copying its product design._
+    
+3. _He thought about **suing** the hospital for negligence._
+    
+4. _If you post false information, someone might end up **suing** you for defamation._
+    
+
+👉 In simple words: **“Suing” means dragging someone to court because they wronged you, and you want justice or money as compensation.**
+
+
+# Bailed
+
+The word **“bailed”** has a couple of meanings depending on the context:
+
+---
+
+### 1. **Legal meaning (from “bail”)**
+
+- If someone is arrested, they can be **bailed out** (released from jail temporarily after paying money).  
+    👉 _“He got arrested, but his parents **bailed him out** the next day.”_
+    
+
+---
+
+### 2. **Casual / Slang meaning**
+
+- To **bail** = to leave suddenly, cancel plans, or back out.  
+    👉 _“We were supposed to hang out, but he **bailed** last minute.”_  
+    👉 _“She **bailed** on the party without telling anyone.”_
+    
+
+It’s commonly used in day-to-day speech when someone dips out unexpectedly.
+
+---
+
+⚡In short:
+
+- **Formal:** released from jail on bail.
+    
+- **Informal/slang:** ditching, leaving, or cancelling plans.
+    
+
+# Dips out
+“**Dips out**” is slang, and it basically means:
+
+👉 **to leave suddenly, usually without notice, or to bail on something.**
+
+---
+
+### Usage examples:
+
+1. _“He always **dips out** when it’s time to clean up.”_
+    
+2. _“We were chilling, but she **dipped out** early.”_
+    
+3. _“Bro saw the teacher coming and just **dipped out** 💨.”_
+    
+
+---
+
+⚡In simple words: **“dip out” = bounce / bail / leave quickly.**
+
+# Biased
+
+The word **“biased”** means being **unfairly in favor of one side, opinion, or group over another**.
+
+👉 In simple words:  
+If someone is _biased_, they don’t look at a situation equally or neutrally — they lean toward one side because of personal opinion, preference, or prejudice.
+
+### Examples:
+
+- A teacher who gives better marks only to her favorite students is **biased**.
+    
+- A news channel that always supports one political party is **biased**.
+    
+- If a referee favors one team in a match, people say the referee is **biased**.
+    
+
+
+
+# Moonlighting
+
+### **Meaning of Moonlighting**
+
+- _Moonlighting_ = doing a **second job or side work** outside your regular full-time job (usually at night, after office hours).
+    
+- Example: Someone is a software engineer in the day, but at night they do freelance web development.
+    
+
+---
+
+### **Usage in a Sentence**
+
+1. _“He was caught moonlighting as a freelancer while working full-time at the IT company.”_
+    
+2. _“Many employees moonlight to earn extra income apart from their regular salary.”_
+    
+3. _“The company policy strictly prohibits moonlighting without prior approval.”_
+    
+
+---
+
+👉 Basically, moonlighting = **side hustle while already employed**.
+
+# Rambling
+### ✅ Meaning of **rambling**
+
+**Rambling** can be used in two main ways:
+
+1. **When someone talks or writes in a long, confusing, or wandering way** (without clear structure).
+    
+    - Example: _“His speech was rambling and hard to follow.”_
+        
+2. **When something (like a path, house, or plant) spreads out in many directions in a messy or irregular way.**
+    
+    - Example: _“They walked along a rambling country road.”_
+        
+    - Example: _“She lives in a rambling old farmhouse.”_
+        
+
+---
+
+### ✅ Usage Examples
+
+- “The professor kept **rambling** about unrelated topics during the lecture.”
+    
+- “He gave a **rambling** explanation that didn’t make much sense.”
+    
+- “We explored a **rambling** garden filled with wildflowers.”
+    
+
+---
+
+👉 In casual talk, if someone says _“Stop rambling”_, it means:  
+**“Stop talking endlessly without a point.”** 😅
+
+# Immaculate
+
+**Word:** Immaculate
+
+**Meaning:**  
+Perfectly clean, flawless, or without any mistakes.
+
+**Example Sentences:**
+
+- _She walked into the room wearing an immaculate white dress._ (clean, spotless)
+    
+- _His report was immaculate, with no errors or corrections needed._ (flawless, perfect)
+    
+
+👉 Basically, you can use “immaculate” to describe something **pure, spotless, or perfect in execution.**
+
+
+# Invasion(അധിനിവേശം)
+
+An **invasion** is when one group, country, or force **enters another place, area, or country** by force, often to take control, attack, or conquer it. It usually involves military action but can also be used more loosely for overwhelming or unwanted entry.
+
+---
+
+### 📖 **Usage Examples:**
+
+1. **Military context:**  
+    _The army launched an **invasion** of the neighboring country._
+    
+2. **Figurative or everyday use:**  
+    _The sudden **invasion** of tourists overwhelmed the small town._
+    
+3. **Historical use:**  
+    _The Roman **invasion** changed the culture and politics of Britain._
+    
+
+---
+
+# Encroachment(കയ്യേറ്റം)
+
+**Encroachment** refers to the act of **gradually or stealthily intruding on someone else's space, rights, property, or territory**, often without permission. It may not be as aggressive as an invasion but is still unwanted and problematic.
+
+---
+
+### 📖 **Usage Examples:**
+
+1. **Property-related:**  
+    _The neighbor’s fence was an **encroachment** on our land._
+    
+2. **Environmental context:**  
+    _Deforestation is causing human **encroachment** into wildlife habitats._
+    
+3. **Rights or freedom:**  
+    _The new rules were seen as an **encroachment** on personal privacy._
+    
+
+---
+
+### ➤ Related words:
+
+- **Intrusion** – Entering without permission.
+    
+- **Trespassing** – Going onto someone’s property without consent.
+    
+- **Violation** – Breaking rules, rights, or agreements.
+    
+
+---
+
+### ➤ Summary:
+
+- **Encroachment** is usually **slow, creeping, or subtle**.
+    
+- It can refer to land, personal space, rights, or even ideas.
+    
+- It’s unwanted and can lead to disputes or bigger conflicts if not addressed.
+    
+
+If you want examples from law, environment, or social issues, just tell me!
